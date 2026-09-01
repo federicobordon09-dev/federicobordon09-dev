@@ -18,8 +18,6 @@ Full Stack Developer de Mendoza, Argentina. Especializado en **Next.js**, **Type
 
 **[Copa Chapa Chapa](https://copachapachapa.vercel.app)** — Plataforma web del campeonato argentino de simracing: clasificaciones en vivo, tabla de equipos, resultados por split, historial de campeones y formulario de inscripción con anti-spam.
 
-**[MediComprende](https://medicomprende.vercel.app)** — App que traduce informes médicos en PDF a lenguaje claro usando IA de Gemini. Incluye dashboard, comparación de estudios y chat con contexto clínico (modelo freemium con Mercado Pago).
-
 **[Portfolio](https://federicobordon.com.ar)** — Mi portafolio personal con diseño oscuro, animaciones con Framer Motion, carga tipo boot sequence y contacto integrado.
 
 **[Bodega Andeluna](https://bodega-andeluna.vercel.app)** — Rediseño conceptual del sitio de una bodega de alta montaña en Valle de Uco (Mendoza). 32 vinos en 6 líneas, experiencias gastronómicas y lodge, en 3 idiomas (ES/EN/PT).
