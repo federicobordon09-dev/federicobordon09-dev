@@ -2,28 +2,41 @@
 
 **Full Stack Developer** — Mendoza, Argentina.
 
-Diseño y construyo productos web completos, de la interfaz al deploy, con Next.js, TypeScript y PostgreSQL. Incorporo inteligencia artificial cuando aporta valor real.
+Construyo productos web completos, desde la interfaz hasta el deploy.
+Trabajo principalmente con **Next.js, TypeScript y PostgreSQL**, incorporando inteligencia artificial cuando realmente aporta valor al producto.
 
-## Proyectos destacados
+## 🚀 Proyectos destacados
 
-**[Nuvio](https://nuvio-lemon-six.vercel.app)** — Plataforma que convierte estudios médicos en explicaciones claras: sube tu PDF y la IA te explica qué significa cada valor, con chat por documento, comparación de estudios y seguimiento de evolución.
+### 🧠 [Nuvio](https://nuvio-lemon-six.vercel.app)
 
-**[El Colorado Resto Bar](https://github.com/federicobordon09-dev/elcolorado-web)** — Sistema de pedidos online para un restaurante de La Consulta, Mendoza: carta en tiempo real, carrito, checkout y panel de administración sobre Supabase con RLS deny-by-default.
+Plataforma de análisis de estudios médicos que transforma PDFs complejos en explicaciones más claras y comprensibles. Incluye análisis con IA, chat por documento, comparación de estudios y seguimiento de evolución.
 
-**[Copa Chapa Chapa](https://copachapachapa.vercel.app)** — Plataforma del campeonato argentino de simracing: clasificaciones en vivo, tabla de equipos, resultados por split, historial de campeones e inscripciones.
+### 🍽️ [El Colorado Resto Bar](https://github.com/federicobordon09-dev/elcolorado-web)
 
-**[Portfolio](https://federicobordon.com.ar)** — Mi sitio personal: diseño oscuro, animaciones y contacto integrado.
+Sistema de pedidos online para un restaurante de La Consulta, Mendoza. Incluye carta dinámica, disponibilidad en tiempo real, carrito, checkout y panel de administración construido sobre Supabase con **RLS deny-by-default**.
 
-## También
+### 🏁 [Copa Chapa Chapa](https://copachapachapa.vercel.app)
 
-Landings y sitios a medida para restaurantes, bodegas y comercios: Buchardo Restaurante, Los Tilos, Dante Cocina Local, La Taberna, Entre Tablas, Opuntia y Bodega Andeluna.
+Plataforma para un campeonato argentino de simracing, con clasificaciones en vivo, tabla de equipos, resultados por split, historial de campeones e inscripciones.
 
-## Stack
+### ◼️ [Portfolio](https://federicobordon.com.ar)
 
-Next.js · React · TypeScript · Tailwind CSS · PostgreSQL · Supabase · Vercel
+Mi sitio personal y espacio para mostrar proyectos, experimentar con interfaces y desarrollar mi identidad como desarrollador.
 
----
+## ✦ También construyo
+
+Landings y sitios web a medida para restaurantes, bodegas y comercios.
+
+Algunos proyectos: **Buchardo Restaurante · Los Tilos · Dante Cocina Local · La Taberna · Entre Tablas · Opuntia · Bodega Andeluna**
+
+## 🛠️ Stack
+
+`Next.js` · `React` · `TypeScript` · `Tailwind CSS` · `PostgreSQL` · `Supabase` · `Vercel`
+
+## 🌐 Encontrame
 
 [Portfolio](https://federicobordon.com.ar) · [LinkedIn](https://www.linkedin.com/in/federicobordon)
 
-*Creado con la ayuda de Claude y OpenCode.*
+---
+
+*Desarrollo con IA como parte de mi proceso.*
