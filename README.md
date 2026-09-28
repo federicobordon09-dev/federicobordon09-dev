@@ -1,27 +1,29 @@
-## Hola, soy Federico 👋
+# Federico Bordón
 
-Full Stack Developer de Mendoza, Argentina. Especializado en **Next.js**, **TypeScript** y **PostgreSQL**, y actualmente sumando **IA generativa** a mis proyectos. Me apasiona construir experiencias web que combinen diseño cuidadoso con tecnología sólida.
+**Full Stack Developer** — Mendoza, Argentina.
 
-### Stack
+Diseño y construyo productos web completos, de la interfaz al deploy, con Next.js, TypeScript y PostgreSQL. Incorporo inteligencia artificial cuando aporta valor real.
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=node.js&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+## Proyectos destacados
 
-### Proyectos destacados
+**[Nuvio](https://nuvio-lemon-six.vercel.app)** — Plataforma que convierte estudios médicos en explicaciones claras: sube tu PDF y la IA te explica qué significa cada valor, con chat por documento, comparación de estudios y seguimiento de evolución.
 
-**[Copa Chapa Chapa](https://copachapachapa.vercel.app)** — Plataforma web del campeonato argentino de simracing: clasificaciones en vivo, tabla de equipos, resultados por split, historial de campeones y formulario de inscripción con anti-spam.
+**[El Colorado Resto Bar](https://github.com/federicobordon09-dev/elcolorado-web)** — Sistema de pedidos online para un restaurante de La Consulta, Mendoza: carta en tiempo real, carrito, checkout y panel de administración sobre Supabase con RLS deny-by-default.
 
-**[Portfolio](https://federicobordon.com.ar)** — Mi portafolio personal con diseño oscuro, animaciones con Framer Motion, carga tipo boot sequence y contacto integrado.
+**[Copa Chapa Chapa](https://copachapachapa.vercel.app)** — Plataforma del campeonato argentino de simracing: clasificaciones en vivo, tabla de equipos, resultados por split, historial de campeones e inscripciones.
 
-**[Bodega Andeluna](https://bodega-andeluna.vercel.app)** — Rediseño conceptual del sitio de una bodega de alta montaña en Valle de Uco (Mendoza). 32 vinos en 6 líneas, experiencias gastronómicas y lodge, en 3 idiomas (ES/EN/PT).
+**[Portfolio](https://federicobordon.com.ar)** — Mi sitio personal: diseño oscuro, animaciones y contacto integrado.
+
+## También
+
+Landings y sitios a medida para restaurantes, bodegas y comercios: Buchardo Restaurante, Los Tilos, Dante Cocina Local, La Taberna, Entre Tablas, Opuntia y Bodega Andeluna.
+
+## Stack
+
+Next.js · React · TypeScript · Tailwind CSS · PostgreSQL · Supabase · Vercel
 
 ---
 
 [Portfolio](https://federicobordon.com.ar) · [LinkedIn](https://www.linkedin.com/in/federicobordon)
+
+*Creado con la ayuda de Claude y OpenCode.*
