@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="180" viewBox="0 0 460 180" role="img" aria-label="Nuvio: plataforma que explica estudios médicos con IA">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#131316"/>
+      <stop offset="1" stop-color="#0A0A0B"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="459" height="179" rx="14" fill="url(#card)" stroke="#26262B"/>
+  <rect x="0" y="34" width="3" height="112" rx="1.5" fill="url(#bar)"/>
+  <text x="30" y="42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="2.2" fill="#8B8B96">PRODUCTO · IA APLICADA</text>
+  <text x="430" y="42" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1" fill="#A78BFA">DEMO ↗</text>
+  <text x="30" y="84" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="-0.6" fill="#F5F5F5">Nuvio</text>
+  <text x="30" y="112" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#9E9EA8">Subís un estudio médico y la IA explica</text>
+  <text x="30" y="132" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#9E9EA8">cada valor en lenguaje claro.</text>
+  <text x="30" y="158" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.4" fill="#6A6A74">next.js · typescript · supabase · gemini</text>
+</svg>
