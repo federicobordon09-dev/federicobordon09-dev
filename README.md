@@ -123,5 +123,4 @@ El código de estos proyectos está público en [GitHub](https://github.com/fede
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/img/band-dark.webp">
-  <img src="assets/img/band-light.webp" alt="Ilustración de tinta: paisaje de montañas con un torii" width="100%">
 </picture>
