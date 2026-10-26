@@ -1,97 +1,47 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/img/hero-dark.webp">
-  <img src="assets/img/hero-light.webp" alt="Federico Bordón — desarrollo web con una estética samurái" width="100%">
+  <img src="assets/img/hero-light.webp" alt="Banner de Federico Bordón con estética samurái" width="100%">
 </picture>
 
 <p align="center">
-  <a href="#sobre-mí">Sobre mí</a>
-  &nbsp;·&nbsp;
-  <a href="#qué-construyo">Qué construyo</a>
-  &nbsp;·&nbsp;
-  <a href="#stack">Stack</a>
-  &nbsp;·&nbsp;
-  <a href="#cómo-trabajo">Cómo trabajo</a>
-  &nbsp;·&nbsp;
-  <a href="#contacto">Contacto</a>
-</p>
-
-<h1 align="center">Federico Bordón</h1>
-
-<p align="center">
-  <strong>Desarrollador web en formación, construyendo productos con criterio.</strong><br>
-  Frontend · Full-stack · Diseño de interfaces · IA aplicada
+  <strong>Federico Bordón</strong><br>
+  Desarrollador web full-stack · Mendoza, Argentina<br>
+  Construyo interfaces y productos web donde diseño, código y criterio trabajan juntos.
 </p>
 
 <p align="center">
-  <img src="assets/img/avatar.webp" alt="Logo de Federico Bordón" width="112">
+  <img src="assets/img/avatar.webp" alt="Logo de Federico Bordón" width="96">
 </p>
 
-## Sobre mí
-
-Soy Federico Bordón, estudiante de desarrollo de software y desarrollador en formación desde Mendoza, Argentina.
-
-Estoy creciendo hacia un perfil full-stack, con foco en desarrollo web, interfaces cuidadas y proyectos reales. Me interesa unir programación, diseño, producto y experiencia de usuario para construir soluciones claras, accesibles y útiles.
-
-Mi forma de trabajar toma inspiración de la disciplina samurái: atención al detalle, mejora constante y respeto por el oficio.
-
-## Qué construyo
-
-Trabajo en productos web completos, desde la interfaz hasta el deploy:
-
-- Interfaces responsive con React, Next.js, TypeScript y Tailwind CSS.
-- APIs y soluciones backend con Node.js, PostgreSQL, Supabase y Neon.
-- Productos donde accesibilidad, rendimiento y estados de error forman parte del alcance.
-- Herramientas con inteligencia artificial cuando resuelven un problema real.
-- Experimentos de producto, landings y sitios para proyectos concretos.
-
-## Proyectos destacados
-
-### [Nuvio](https://nuvio-lemon-six.vercel.app)
-
-Una plataforma que ayuda a entender estudios médicos con inteligencia artificial, chat por documento, comparación de resultados y evolución en el tiempo.
-
-### [Hush](https://www.npmjs.com/package/opencode-hush)
-
-Plugin publicado en npm para OpenCode. Muestra presión de contexto, rama de Git y métricas de sesión en una sidebar compacta, sin duplicar la información que ya presenta el host.
-
-### [Copa Chapa Chapa](https://copachapachapa.vercel.app)
-
-Plataforma para un campeonato argentino de simracing, con clasificaciones, splits e historial de campeones alimentados desde Google Sheets.
-
-### [DEV/NULL](https://github.com/federicobordon09-dev/devnull-web)
-
-Tienda conceptual de indumentaria para programadores, con catálogo, guía de talles, carrito y estado compartido.
-
-Más proyectos públicos en [GitHub](https://github.com/federicobordon09-dev?tab=repositories).
-
-## Stack
-
-- **Frontend:** HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS.
-- **Backend:** Node.js, APIs REST, PostgreSQL, Supabase, Neon.
-- **Calidad y producto:** responsive design, accesibilidad, rendimiento, Vitest.
-- **Herramientas:** Git, GitHub, pnpm, Vercel, Linux y OpenCode.
-
-## Cómo trabajo
-
-- Verifico antes de afirmar. Si algo no se probó, lo digo.
-- Diseño estados de carga, error y vacío desde el inicio.
-- Prefiero soluciones sólidas antes que adornos sin función.
-- Mantengo el alcance acotado y documento las decisiones importantes.
-- No invento clientes, testimonios, métricas ni resultados.
-- Uso IA como herramienta para pensar mejor, no para delegar el criterio.
-
-## Contacto
-
-Estoy abierto a conversar sobre productos web, interfaces, automatización y proyectos que necesiten una implementación cuidada.
-
 <p align="center">
-  <a href="https://federicobordon.com.ar">Portfolio</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/federicobordon">LinkedIn</a>
-  &nbsp;·&nbsp;
+  <a href="https://federicobordon.com.ar">Portfolio</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/federicobordon">LinkedIn</a> &nbsp;·&nbsp;
   <a href="mailto:federicobordon.dev@gmail.com">Email</a>
 </p>
 
-<p align="center">
-  <sub>Disciplina para construir. Curiosidad para mejorar.</sub>
-</p>
+## Ahora
+
+Estoy construyendo **Hush**, un plugin de telemetría para OpenCode, y **Nuvio**, una plataforma que ayuda a interpretar estudios médicos con IA.
+
+## Proyectos
+
+<table>
+  <tr>
+    <td width="50%" valign="top"><strong><a href="https://nuvio-lemon-six.vercel.app">Nuvio</a></strong><br>Explica estudios médicos con IA, con chat por documento y comparación de resultados.<br><sub>Next.js · TypeScript · Supabase</sub></td>
+    <td width="50%" valign="top"><strong><a href="https://www.npmjs.com/package/opencode-hush">Hush</a></strong><br>Plugin de OpenCode que muestra contexto, Git y métricas de sesión sin duplicar el host.<br><sub>TypeScript · SolidJS · OpenCode</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><strong><a href="https://copachapachapa.vercel.app">Copa Chapa Chapa</a></strong><br>Publica en vivo clasificaciones, splits e historial de un campeonato de simracing.<br><sub>Next.js · TypeScript · Google Sheets</sub></td>
+    <td width="50%" valign="top"><strong><a href="https://github.com/federicobordon09-dev/devnull-web">DEV/NULL</a></strong><br>Tienda de indumentaria para programadores con catálogo, talles y carrito.<br><sub>Next.js · React · Tailwind CSS</sub></td>
+  </tr>
+</table>
+
+<p align="center"><sub><a href="https://github.com/federicobordon09-dev?tab=repositories">Ver todos los repositorios</a></sub></p>
+
+## Stack
+
+**Frontend:** HTML · CSS · JavaScript · TypeScript · React · Next.js · Tailwind CSS<br>
+**Backend:** Node.js · APIs REST · PostgreSQL · Supabase · Neon<br>
+**Herramientas:** Git · GitHub · pnpm · Vercel · Vitest · OpenCode
+
+<p align="center"><sub>Disciplina para construir. Curiosidad para mejorar.</sub></p>
