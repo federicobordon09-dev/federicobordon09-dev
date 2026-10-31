@@ -1,49 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="994" height="560" viewBox="0 0 994 560" role="img" aria-label="Ficha de perfil de Federico Bordón">
-  <rect width="994" height="560" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="994" height="580" viewBox="0 0 994 580" role="img" aria-label="Ficha de perfil de Federico Bordón">
+  <rect width="994" height="580" fill="#ffffff"/>
   <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14" fill="#24292f">
-  <text x="20" y="129" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                                                 ### ###########                     </text>
-  <text x="20" y="143" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                                  ###   #########################                    </text>
-  <text x="20" y="157" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                                ##################################                   </text>
-  <text x="20" y="171" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                   ## ##       #################################                     </text>
-  <text x="20" y="185" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                ########      #####################   #######    ######              </text>
-  <text x="20" y="199" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">             # ###########     ###########                      ######## #           </text>
-  <text x="20" y="213" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">          #############        #  ########                      ###########          </text>
-  <text x="20" y="227" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">       #############             ########     #############        ###########       </text>
-  <text x="20" y="241" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">     ###########                 ###########################          ###########    </text>
-  <text x="20" y="255" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">  ###########              #################################             ##########  </text>
-  <text x="20" y="269" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">##########                 ###############################                  #########</text>
-  <text x="20" y="283" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">  ############             ##############     #                         ############ </text>
-  <text x="20" y="297" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">    #############           ############                             #############   </text>
-  <text x="20" y="311" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">       ##############          ########                          ##############      </text>
-  <text x="20" y="325" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">          ##############       ########                      ##############          </text>
-  <text x="20" y="339" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">             # ##########     #########                    #############             </text>
-  <text x="20" y="353" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                # ######      ########                     ##########                </text>
-  <text x="20" y="367" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                     ####    #########                    #######                    </text>
-  <text x="20" y="381" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                             # #######                      ##                       </text>
-  <text x="20" y="395" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                             # #######                                               </text>
-  <text x="20" y="409" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                               #### ##                                               </text>
-  <text x="20" y="423" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                                ##                                                   </text>
-  <text x="20" y="437" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                                #                                                    </text>
+  <text x="20" y="139" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                                                 ### ###########                     </text>
+  <text x="20" y="153" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                                  ###   #########################                    </text>
+  <text x="20" y="167" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                                ##################################                   </text>
+  <text x="20" y="181" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                   ## ##       #################################                     </text>
+  <text x="20" y="195" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                ########      #####################   #######    ######              </text>
+  <text x="20" y="209" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">             # ###########     ###########                      ######## #           </text>
+  <text x="20" y="223" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">          #############        #  ########                      ###########          </text>
+  <text x="20" y="237" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">       #############             ########     #############        ###########       </text>
+  <text x="20" y="251" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">     ###########                 ###########################          ###########    </text>
+  <text x="20" y="265" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">  ###########              #################################             ##########  </text>
+  <text x="20" y="279" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">##########                 ###############################                  #########</text>
+  <text x="20" y="293" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">  ############             ##############     #                         ############ </text>
+  <text x="20" y="307" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">    #############           ############                             #############   </text>
+  <text x="20" y="321" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">       ##############          ########                          ##############      </text>
+  <text x="20" y="335" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">          ##############       ########                      ##############          </text>
+  <text x="20" y="349" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">             # ##########     #########                    #############             </text>
+  <text x="20" y="363" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                # ######      ########                     ##########                </text>
+  <text x="20" y="377" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                     ####    #########                    #######                    </text>
+  <text x="20" y="391" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                             # #######                      ##                       </text>
+  <text x="20" y="405" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                             # #######                                               </text>
+  <text x="20" y="419" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                               #### ##                                               </text>
+  <text x="20" y="433" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                                ##                                                   </text>
+  <text x="20" y="447" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                                #                                                    </text>
   <text x="552" y="34" fill="#bc4c00" font-size="17" font-weight="700" xml:space="preserve">Federico Bordón</text>
   <text x="552" y="54" fill="#afb8c1" xml:space="preserve">..................................................</text>
-  <text x="552" y="74" xml:space="preserve"><tspan fill="#bc4c00">Uptime</tspan><tspan fill="#afb8c1">...............</tspan><tspan fill="#0550ae"> 24 años, 6 meses, 26 días</tspan></text>
-  <text x="552" y="94" xml:space="preserve"><tspan fill="#bc4c00">Location</tspan><tspan fill="#afb8c1">.............</tspan><tspan fill="#0550ae"> Mendoza, Argentina</tspan></text>
-  <text x="552" y="114" xml:space="preserve"><tspan fill="#bc4c00">IDE</tspan><tspan fill="#afb8c1">..................</tspan><tspan fill="#0550ae"> Cursor</tspan></text>
-  <text x="552" y="154" xml:space="preserve"><tspan fill="#bc4c00">Programming</tspan><tspan fill="#afb8c1">..........</tspan><tspan fill="#0550ae"> TypeScript, JavaScript</tspan></text>
-  <text x="552" y="174" xml:space="preserve"><tspan fill="#bc4c00">Real</tspan><tspan fill="#afb8c1">.................</tspan><tspan fill="#0550ae"> Español, Inglés (intermedio)</tspan></text>
-  <text x="552" y="214" xml:space="preserve"><tspan fill="#bc4c00">Stack</tspan><tspan fill="#afb8c1">................</tspan><tspan fill="#0550ae"> Next.js, React, Node.js</tspan></text>
-  <text x="552" y="254" xml:space="preserve"><tspan fill="#bc4c00">Software</tspan><tspan fill="#afb8c1">.............</tspan><tspan fill="#0550ae"> Desarrollo web</tspan></text>
-  <text x="552" y="274" xml:space="preserve"><tspan fill="#bc4c00">Gaming</tspan><tspan fill="#afb8c1">...............</tspan><tspan fill="#0550ae"> League of Legends</tspan></text>
-  <text x="552" y="314" fill="#bc4c00" font-weight="700" xml:space="preserve">Contact</text>
-  <text x="552" y="334" fill="#afb8c1" xml:space="preserve">..................................................</text>
-  <text x="552" y="354" xml:space="preserve"><tspan fill="#bc4c00">Portfolio</tspan><tspan fill="#afb8c1">............</tspan><tspan fill="#0550ae"> federicobordon.com.ar</tspan></text>
-  <text x="552" y="374" xml:space="preserve"><tspan fill="#bc4c00">LinkedIn</tspan><tspan fill="#afb8c1">.............</tspan><tspan fill="#0550ae"> in/federicobordon</tspan></text>
-  <text x="552" y="394" xml:space="preserve"><tspan fill="#bc4c00">npm</tspan><tspan fill="#afb8c1">..................</tspan><tspan fill="#0550ae"> federicobordondev</tspan></text>
-  <text x="552" y="434" fill="#bc4c00" font-weight="700" xml:space="preserve">GitHub Stats</text>
-  <text x="552" y="454" fill="#afb8c1" xml:space="preserve">..................................................</text>
-  <text x="552" y="474" xml:space="preserve"><tspan fill="#bc4c00">Repos</tspan><tspan fill="#afb8c1">................</tspan><tspan fill="#0550ae"> 9</tspan></text>
-  <text x="552" y="494" xml:space="preserve"><tspan fill="#bc4c00">Stars</tspan><tspan fill="#afb8c1">................</tspan><tspan fill="#0550ae"> 0</tspan></text>
-  <text x="552" y="514" xml:space="preserve"><tspan fill="#bc4c00">Commits</tspan><tspan fill="#afb8c1">..............</tspan><tspan fill="#0550ae"> 232</tspan></text>
-  <text x="552" y="534" xml:space="preserve"><tspan fill="#bc4c00">Followers</tspan><tspan fill="#afb8c1">............</tspan><tspan fill="#0550ae"> 69</tspan></text>
+  <text x="552" y="74" xml:space="preserve"><tspan fill="#bc4c00">Uptime</tspan><tspan fill="#afb8c1">..........</tspan><tspan fill="#0550ae"> 24 años, 6 meses, 26 días</tspan></text>
+  <text x="552" y="94" xml:space="preserve"><tspan fill="#bc4c00">Location</tspan><tspan fill="#afb8c1">........</tspan><tspan fill="#0550ae"> Mendoza, Argentina</tspan></text>
+  <text x="552" y="114" xml:space="preserve"><tspan fill="#bc4c00">IDE</tspan><tspan fill="#afb8c1">.............</tspan><tspan fill="#0550ae"> Cursor</tspan></text>
+  <text x="552" y="154" xml:space="preserve"><tspan fill="#bc4c00">Programming</tspan><tspan fill="#afb8c1">.....</tspan><tspan fill="#0550ae"> TypeScript, JavaScript, HTML, CSS</tspan></text>
+  <text x="552" y="174" xml:space="preserve"><tspan fill="#bc4c00">Real</tspan><tspan fill="#afb8c1">............</tspan><tspan fill="#0550ae"> Español, Inglés (A1)</tspan></text>
+  <text x="552" y="214" xml:space="preserve"><tspan fill="#bc4c00">Frontend</tspan><tspan fill="#afb8c1">........</tspan><tspan fill="#0550ae"> Next.js, React, Tailwind CSS</tspan></text>
+  <text x="552" y="234" xml:space="preserve"><tspan fill="#bc4c00">Backend</tspan><tspan fill="#afb8c1">.........</tspan><tspan fill="#0550ae"> Node.js, PostgreSQL</tspan></text>
+  <text x="552" y="274" xml:space="preserve"><tspan fill="#bc4c00">Software</tspan><tspan fill="#afb8c1">........</tspan><tspan fill="#0550ae"> Desarrollo web, open source</tspan></text>
+  <text x="552" y="294" xml:space="preserve"><tspan fill="#bc4c00">Gaming</tspan><tspan fill="#afb8c1">..........</tspan><tspan fill="#0550ae"> League of Legends</tspan></text>
+  <text x="552" y="334" fill="#bc4c00" font-weight="700" xml:space="preserve">Contact</text>
+  <text x="552" y="354" fill="#afb8c1" xml:space="preserve">..................................................</text>
+  <text x="552" y="374" xml:space="preserve"><tspan fill="#bc4c00">Portfolio</tspan><tspan fill="#afb8c1">.......</tspan><tspan fill="#0550ae"> federicobordon.com.ar</tspan></text>
+  <text x="552" y="394" xml:space="preserve"><tspan fill="#bc4c00">LinkedIn</tspan><tspan fill="#afb8c1">........</tspan><tspan fill="#0550ae"> in/federicobordon</tspan></text>
+  <text x="552" y="414" xml:space="preserve"><tspan fill="#bc4c00">npm</tspan><tspan fill="#afb8c1">.............</tspan><tspan fill="#0550ae"> federicobordondev</tspan></text>
+  <text x="552" y="454" fill="#bc4c00" font-weight="700" xml:space="preserve">GitHub Stats</text>
+  <text x="552" y="474" fill="#afb8c1" xml:space="preserve">..................................................</text>
+  <text x="552" y="494" xml:space="preserve"><tspan fill="#bc4c00">Repos</tspan><tspan fill="#afb8c1">...........</tspan><tspan fill="#0550ae"> 9</tspan></text>
+  <text x="552" y="514" xml:space="preserve"><tspan fill="#bc4c00">Stars</tspan><tspan fill="#afb8c1">...........</tspan><tspan fill="#0550ae"> 0</tspan></text>
+  <text x="552" y="534" xml:space="preserve"><tspan fill="#bc4c00">Commits</tspan><tspan fill="#afb8c1">.........</tspan><tspan fill="#0550ae"> 235</tspan></text>
+  <text x="552" y="554" xml:space="preserve"><tspan fill="#bc4c00">Followers</tspan><tspan fill="#afb8c1">.......</tspan><tspan fill="#0550ae"> 69</tspan></text>
   </g>
 </svg>
