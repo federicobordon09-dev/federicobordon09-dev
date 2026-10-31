@@ -1,0 +1,50 @@
+name: Update profile SVG
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "config/**"
+      - "assets/**"
+      - "scripts/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-svg
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build SVG
+        # GH_STATS_TOKEN: PAT con scope read:user (recomendado para contributionsCollection).
+        # Si no existe, se usa GITHUB_TOKEN (puede no alcanzar para commits totales).
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: node scripts/build.mjs
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg
+          if git diff --staged --quiet; then
+            echo "Sin cambios en los SVG"
+            exit 0
+          fi
+          git commit -m "chore: actualizar SVG del perfil [skip ci]"
+          git push
