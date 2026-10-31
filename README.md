@@ -19,5 +19,3 @@ Plugin open source para OpenCode que muestra telemetría de la sesión en el TUI
   <a href="https://github.com/federicobordon09-dev/opencode-Hush">GitHub</a> &nbsp;·&nbsp;
   <a href="https://www.npmjs.com/package/opencode-hush">npm</a>
 </p>
-
-<p align="center"><sub>Este perfil se genera con scripts/build.mjs.</sub></p>
