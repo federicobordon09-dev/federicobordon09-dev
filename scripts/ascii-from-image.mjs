@@ -133,17 +133,26 @@ async function main() {
   try {
     await stat(SOURCE_PNG);
     asciiContent = await pngToAsciiWithPngjs(width, threshold, invert);
-    console.log(`ok: assets/ascii.txt convertido desde ${SOURCE_PNG} (${width} columnas)`);
+    console.log(`ok: assets/ascii.txt convertido desde ${SOURCE_PNG}`);
   } catch (err) {
     if (err.code === "ENOENT") {
-      asciiContent = fallbackAscii(width);
-      console.log(`ok: assets/ascii.txt generado (<F> grande) - no hay ${SOURCE_PNG}`);
+      console.warn(`aviso: no existe ${SOURCE_PNG}. No se genera fallback en silencio.`);
+      console.warn("       Agrega el PNG y vuelve a correr: npm run ascii");
+      process.exitCode = 0;
+      return;
     } else {
       console.error(`error: ${err.message}`);
       process.exitCode = 1;
       return;
     }
   }
+
+  // Vista previa y tamaño final
+  const lines = asciiContent.split("\n");
+  const cols = Math.max(...lines.map((l) => l.length));
+  console.log(`tamaño final: ${lines.length} filas x ${cols} columnas`);
+  console.log("vista previa:");
+  console.log(asciiContent);
 
   await writeFile(OUT_TXT, asciiContent, "utf8");
   console.log(`ok: escrito en ${OUT_TXT}`);
