@@ -53,16 +53,11 @@ async function githubFetch(url, init = {}) {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 15000);
   let response;
-  try {
-    response = await fetch(url, { ...init, headers, signal: controller.signal });
-  } catch (e) {
-    clearTimeout(timeoutId);
-    throw new Error(`error de red/timeout: ${e.message}`);
-  }
+  try { response = await fetch(url, { ...init, headers, signal: controller.signal }); }
+  catch (e) { clearTimeout(timeoutId); throw new Error(`error de red/timeout: ${e.message}`); }
   clearTimeout(timeoutId);
   if (!response.ok) {
-    let txt = "";
-    try { txt = await response.text(); } catch {}
+    let txt = ""; try { txt = await response.text(); } catch {}
     if (response.status === 403 || response.status === 429) throw new Error(`rate limit / acceso denegado (HTTP ${response.status}): ${txt.slice(0, 200)}`);
     throw new Error(`HTTP ${response.status} ${response.statusText}: ${txt.slice(0, 200)}`);
   }
@@ -154,13 +149,18 @@ async function main() {
   try { uptimeStr = calcUptime(profile.birthDate); }
   catch (e) { console.error(`error: ${e.message}`); process.exitCode = 1; return; }
 
-  // Construir items del panel derecho, con secciones
-  const detailItems = []; // {type:'entry',key,value} | {type:'section',name}
+  // Construir items del panel derecho, con secciones y lineas en blanco
+  const detailItems = []; // {type:'entry'|'section'|'blank', ...}
   const warnCompletar = (key, val) => console.warn(`aviso: "${key}" contiene "COMPLETAR" (${JSON.stringify(val)}) — se omite del SVG`);
 
   const pushEntry = (key, value) => {
     if (isBlank(value)) return;
-    const s = String(value).trim();
+    let s = String(value).trim();
+    // Si linkedin empieza con http, mostrar solo desde "in/"
+    if (key === "LinkedIn" && /^https?:\/\//i.test(s)) {
+      const idx = s.indexOf("in/");
+      if (idx !== -1) s = s.slice(idx);
+    }
     if (containsCompletar(s)) { warnCompletar(key, s); return; }
     detailItems.push({ type: "entry", key, value: s });
   };
@@ -168,32 +168,36 @@ async function main() {
   const pushSection = (name, fn) => {
     const before = detailItems.length;
     fn();
-    // Si se agregaron entries, insertar header antes de ellas
     const added = detailItems.length - before;
     if (added > 0) {
-      // mover las entries recien agregadas detras de un header
       const entries = detailItems.splice(before, added);
       detailItems.push({ type: "section", name });
       detailItems.push(...entries);
     }
   };
 
+  const blank = () => detailItems.push({ type: "blank" });
+
   // Grupo 1
   pushEntry("Uptime", uptimeStr);
   pushEntry("Location", profile.location);
   pushEntry("IDE", profile.ide);
 
-  // Grupo 2
+  blank();
+  // Grupo 2 (Languages)
   pushEntry("Programming", profile.languages?.programming);
   pushEntry("Real", profile.languages?.real);
 
-  // Grupo 3
+  blank();
+  // Grupo 3 (Stack)
   pushEntry("Stack", profile.stack);
 
-  // Grupo 4
+  blank();
+  // Grupo 4 (Hobbies)
   pushEntry("Software", profile.hobbies?.software);
   pushEntry("Gaming", profile.hobbies?.gaming);
 
+  blank();
   // Seccion Contact
   pushSection("Contact", () => {
     pushEntry("Portfolio", profile.contact?.portfolio);
@@ -201,6 +205,7 @@ async function main() {
     pushEntry("npm", profile.contact?.npm);
   });
 
+  blank();
   // Seccion GitHub Stats
   pushSection("GitHub Stats", () => {
     pushEntry("Repos", String(stats.repos));
@@ -209,12 +214,14 @@ async function main() {
     pushEntry("Followers", String(stats.followers));
   });
 
-  // Layout
+  // Layout — constantes unicas
   const FONT = "ui-monospace, SFMono-Regular, Consolas, monospace";
   const FONT_SIZE = 14;
   const TITLE_FONT_SIZE = FONT_SIZE + 3;
   const LINE_HEIGHT = 20;
   const CHAR_WIDTH = 8.43;
+  const ASPECT = CHAR_WIDTH / LINE_HEIGHT; // 0.4215 — mismo default de --aspect en ascii-from-image.mjs
+  console.log(`aspect SVG (CHAR_WIDTH/LINE_HEIGHT): ${ASPECT.toFixed(4)}`);
   const PAD = 32;
   const GAP = 24;
   const TARGET_KEY_WIDTH = 40;
@@ -226,11 +233,10 @@ async function main() {
   const detailColWidth = Math.round(detailChars * CHAR_WIDTH);
   const asciiColWidth = Math.round(asciiColumns * CHAR_WIDTH);
 
-  // contar filas del panel derecho
   let detailRowCount = 2; // title + rule
   for (const it of detailItems) {
     if (it.type === "section") detailRowCount += 2; // header + separator
-    else detailRowCount += 1;
+    else detailRowCount += 1; // entry o blank
   }
   const detailHeight = detailRowCount * LINE_HEIGHT;
   const asciiHeight = asciiLines.length * LINE_HEIGHT;
@@ -239,7 +245,6 @@ async function main() {
   const svgWidth = Math.round(PAD * 2 + asciiColWidth + GAP + detailColWidth);
   const svgHeight = Math.round(PAD * 2 + contentHeight);
 
-  const dotsLine = ".".repeat(TARGET_KEY_WIDTH);
   const fullSep = ".".repeat(Math.max(1, TARGET_KEY_WIDTH + 1 + maxValLen));
 
   function renderSvgForTheme(themeName) {
@@ -257,11 +262,13 @@ async function main() {
 
     const detailElements = [];
     detailElements.push(`  <text x="${xDetails}" y="${baseline(0)}" fill="${theme.key}" font-size="${TITLE_FONT_SIZE}" font-weight="700" xml:space="preserve">${escXml(displayName)}</text>`);
-    detailElements.push(`  <text x="${xDetails}" y="${baseline(1)}" fill="${theme.dots}" xml:space="preserve">${dotsLine}</text>`);
+    detailElements.push(`  <text x="${xDetails}" y="${baseline(1)}" fill="${theme.dots}" xml:space="preserve">${fullSep}</text>`);
 
     let rowIdx = 2;
     for (const it of detailItems) {
-      if (it.type === "section") {
+      if (it.type === "blank") {
+        rowIdx += 1;
+      } else if (it.type === "section") {
         detailElements.push(`  <text x="${xDetails}" y="${baseline(rowIdx)}" fill="${theme.key}" font-weight="700" xml:space="preserve">${escXml(it.name)}</text>`);
         detailElements.push(`  <text x="${xDetails}" y="${baseline(rowIdx + 1)}" fill="${theme.dots}" xml:space="preserve">${fullSep}</text>`);
         rowIdx += 2;
