@@ -131,8 +131,21 @@ async function main() {
     console.error(`error: no se pudo leer ${ASCII_FILE}: ${e.message}`);
     process.exitCode = 1; return;
   }
+  // Padding uniforme
   const asciiColumns = Math.max(...asciiLines.map((l) => l.length));
   asciiLines = asciiLines.map((l) => l.padEnd(asciiColumns, " "));
+
+  // Recortar a la caja real (ignorar espacios sobrantes izq/der)
+  let minLeft = Infinity, maxRight = 0;
+  for (const line of asciiLines) {
+    const left = line.length - line.trimStart().length;
+    const right = line.trimEnd().length;
+    if (left < minLeft) minLeft = left;
+    if (right > maxRight) maxRight = right;
+  }
+  if (!isFinite(minLeft)) minLeft = 0;
+  const trimmedWidth = Math.max(0, maxRight - minLeft);
+  const asciiTrimmed = asciiLines.map((l) => l.substring(minLeft, maxRight).padEnd(trimmedWidth, " "));
 
   let stats;
   if (OFFLINE) {
@@ -149,14 +162,13 @@ async function main() {
   try { uptimeStr = calcUptime(profile.birthDate); }
   catch (e) { console.error(`error: ${e.message}`); process.exitCode = 1; return; }
 
-  // Construir items del panel derecho, con secciones y lineas en blanco
-  const detailItems = []; // {type:'entry'|'section'|'blank', ...}
+  // Construir items del panel derecho
+  const detailItems = [];
   const warnCompletar = (key, val) => console.warn(`aviso: "${key}" contiene "COMPLETAR" (${JSON.stringify(val)}) — se omite del SVG`);
 
   const pushEntry = (key, value) => {
     if (isBlank(value)) return;
     let s = String(value).trim();
-    // Si linkedin empieza con http, mostrar solo desde "in/"
     if (key === "LinkedIn" && /^https?:\/\//i.test(s)) {
       const idx = s.indexOf("in/");
       if (idx !== -1) s = s.slice(idx);
@@ -178,27 +190,22 @@ async function main() {
 
   const blank = () => detailItems.push({ type: "blank" });
 
-  // Grupo 1
   pushEntry("Uptime", uptimeStr);
   pushEntry("Location", profile.location);
   pushEntry("IDE", profile.ide);
 
   blank();
-  // Grupo 2 (Languages)
   pushEntry("Programming", profile.languages?.programming);
   pushEntry("Real", profile.languages?.real);
 
   blank();
-  // Grupo 3 (Stack)
   pushEntry("Stack", profile.stack);
 
   blank();
-  // Grupo 4 (Hobbies)
   pushEntry("Software", profile.hobbies?.software);
   pushEntry("Gaming", profile.hobbies?.gaming);
 
   blank();
-  // Seccion Contact
   pushSection("Contact", () => {
     pushEntry("Portfolio", profile.contact?.portfolio);
     pushEntry("LinkedIn", profile.contact?.linkedin);
@@ -206,7 +213,6 @@ async function main() {
   });
 
   blank();
-  // Seccion GitHub Stats
   pushSection("GitHub Stats", () => {
     pushEntry("Repos", String(stats.repos));
     pushEntry("Stars", String(stats.stars));
@@ -220,32 +226,43 @@ async function main() {
   const TITLE_FONT_SIZE = FONT_SIZE + 3;
   const LINE_HEIGHT = 20;
   const CHAR_WIDTH = 8.43;
-  const ASPECT = CHAR_WIDTH / LINE_HEIGHT; // 0.4215 — mismo default de --aspect en ascii-from-image.mjs
+  const ASPECT = CHAR_WIDTH / LINE_HEIGHT;
   console.log(`aspect SVG (CHAR_WIDTH/LINE_HEIGHT): ${ASPECT.toFixed(4)}`);
-  const PAD = 32;
-  const GAP = 24;
-  const TARGET_KEY_WIDTH = 40;
+
+  // ASCII scale (configurable)
+  const ASCII_SCALE = Number(profile.layout?.asciiScale ?? 0.7);
+  const asciiFontSize = FONT_SIZE * ASCII_SCALE;
+  const asciiCharWidth = CHAR_WIDTH * ASCII_SCALE;
+  const asciiLineHeight = LINE_HEIGHT * ASCII_SCALE;
+
+  const PAD = 20;
+  const GAP = 30;
 
   const entriesOnly = detailItems.filter((i) => i.type === "entry");
   const maxValLen = entriesOnly.reduce((m, e) => Math.max(m, e.value.length), 0);
-  const displayName = String(profile.displayName);
-  const detailChars = Math.max(TARGET_KEY_WIDTH + 1 + maxValLen, displayName.length);
+  const maxKeyLen = entriesOnly.reduce((m, e) => Math.max(m, e.key.length), 0);
+  // Ficha ~52 columnas max
+  const TARGET_KEY_WIDTH = Math.max(maxKeyLen, 50 - 1 - maxValLen);
+  const detailChars = Math.max(String(profile.displayName).length, TARGET_KEY_WIDTH + 1 + maxValLen);
   const detailColWidth = Math.round(detailChars * CHAR_WIDTH);
-  const asciiColWidth = Math.round(asciiColumns * CHAR_WIDTH);
+  const asciiColWidth = Math.round(trimmedWidth * asciiCharWidth);
 
-  let detailRowCount = 2; // title + rule
+  let detailRowCount = 2;
   for (const it of detailItems) {
-    if (it.type === "section") detailRowCount += 2; // header + separator
-    else detailRowCount += 1; // entry o blank
+    if (it.type === "section") detailRowCount += 2;
+    else detailRowCount += 1;
   }
   const detailHeight = detailRowCount * LINE_HEIGHT;
-  const asciiHeight = asciiLines.length * LINE_HEIGHT;
+  const asciiHeight = asciiTrimmed.length * asciiLineHeight;
   const contentHeight = Math.max(detailHeight, asciiHeight);
 
-  const svgWidth = Math.round(PAD * 2 + asciiColWidth + GAP + detailColWidth);
+  const svgWidth = Math.round(PAD + asciiColWidth + GAP + detailColWidth + PAD);
   const svgHeight = Math.round(PAD * 2 + contentHeight);
 
-  const fullSep = ".".repeat(Math.max(1, TARGET_KEY_WIDTH + 1 + maxValLen));
+  console.log(`viewBox: ${svgWidth} x ${svgHeight}`);
+  if (svgWidth > 1000) console.warn(`aviso: ancho del viewBox (${svgWidth}) supera 1000 px`);
+
+  const fullSep = ".".repeat(Math.max(1, detailChars));
 
   function renderSvgForTheme(themeName) {
     const theme = { ...THEME_DEFAULTS[themeName], ...(profile.theme?.[themeName] || {}) };
@@ -254,14 +271,14 @@ async function main() {
     const xDetails = Math.round(PAD + asciiColWidth + GAP);
 
     const baseline = (idx) => Math.round(PAD + FONT_SIZE + idx * LINE_HEIGHT);
-    const asciiBaseline = (idx) => Math.round(asciiTop + FONT_SIZE + idx * LINE_HEIGHT);
+    const asciiBaseline = (idx) => Math.round(asciiTop + asciiFontSize + idx * asciiLineHeight);
 
-    const asciiElements = asciiLines
-      .map((line, idx) => `  <text x="${xAscii}" y="${asciiBaseline(idx)}" fill="${theme.ascii}" xml:space="preserve">${escXml(line)}</text>`)
+    const asciiElements = asciiTrimmed
+      .map((line, idx) => `  <text x="${xAscii}" y="${asciiBaseline(idx)}" fill="${theme.ascii}" font-size="${asciiFontSize}" xml:space="preserve">${escXml(line)}</text>`)
       .join("\n");
 
     const detailElements = [];
-    detailElements.push(`  <text x="${xDetails}" y="${baseline(0)}" fill="${theme.key}" font-size="${TITLE_FONT_SIZE}" font-weight="700" xml:space="preserve">${escXml(displayName)}</text>`);
+    detailElements.push(`  <text x="${xDetails}" y="${baseline(0)}" fill="${theme.key}" font-size="${TITLE_FONT_SIZE}" font-weight="700" xml:space="preserve">${escXml(profile.displayName)}</text>`);
     detailElements.push(`  <text x="${xDetails}" y="${baseline(1)}" fill="${theme.dots}" xml:space="preserve">${fullSep}</text>`);
 
     let rowIdx = 2;
