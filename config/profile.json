@@ -6,9 +6,12 @@
   "ide": "Cursor",
   "languages": {
     "programming": "TypeScript, JavaScript, HTML, CSS",
-    "real": "Español, Inglés (intermedio)"
+    "real": "Español, Inglés (A1)"
   },
-  "stack": "Next.js, React, Node.js, Tailwind CSS, PostgreSQL",
+  "stack": {
+    "frontend": "Next.js, React, Tailwind CSS",
+    "backend": "Node.js, PostgreSQL"
+  },
   "hobbies": {
     "software": "Desarrollo web, open source",
     "gaming": "League of Legends"

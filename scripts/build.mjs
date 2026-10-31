@@ -205,7 +205,8 @@ async function main() {
   pushEntry("Real", profile.languages?.real);
 
   blank();
-  pushEntry("Stack", profile.stack);
+  pushEntry("Frontend", profile.stack?.frontend);
+  pushEntry("Backend", profile.stack?.backend);
 
   blank();
   pushEntry("Software", profile.hobbies?.software);
