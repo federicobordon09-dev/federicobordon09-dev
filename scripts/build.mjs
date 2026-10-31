@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -147,10 +147,16 @@ async function main() {
   const trimmedWidth = Math.max(0, maxRight - minLeft);
   const asciiTrimmed = asciiLines.map((l) => l.substring(minLeft, maxRight).padEnd(trimmedWidth, " "));
 
+  const OUT_DIR = OFFLINE ? join(ROOT, ".preview") : ROOT;
+  if (OFFLINE) {
+    await mkdir(OUT_DIR, { recursive: true });
+    console.log("modo offline: usando stats ficticios");
+    console.log("aviso: modo offline — los SVG se escriben en .preview/ (los SVG del repo no se modifican)");
+  }
+
   let stats;
   if (OFFLINE) {
     stats = { ...OFFLINE_STATS };
-    console.log("modo offline: usando stats ficticios");
   } else {
     const token = process.env.GITHUB_TOKEN;
     if (!token) { console.error("error: Falta GITHUB_TOKEN en el entorno (o usa --offline)"); process.exitCode = 1; return; }
@@ -245,6 +251,10 @@ async function main() {
   const TARGET_KEY_WIDTH = Math.max(maxKeyLen, 50 - 1 - maxValLen);
   const detailChars = Math.max(String(profile.displayName).length, TARGET_KEY_WIDTH + 1 + maxValLen);
   const detailColWidth = Math.round(detailChars * CHAR_WIDTH);
+  const longestValue = entriesOnly.reduce((a, b) => (a.value.length >= b.value.length ? a : b), entriesOnly[0])?.value;
+  if (detailChars > 50) {
+    console.warn(`aviso: la ficha ocupa ${detailChars} columnas (objetivo ~50); valor mas largo: "${longestValue}"`);
+  }
   const asciiColWidth = Math.round(trimmedWidth * asciiCharWidth);
 
   let detailRowCount = 2;
@@ -307,12 +317,13 @@ ${detailElements.join("\n")}
 
   for (const theme of THEMES) {
     const svg = renderSvgForTheme(theme);
+    const outPath = join(OUT_DIR, `${theme}_mode.svg`);
     let write = true;
     try {
-      const existing = await readFile(join(ROOT, `${theme}_mode.svg`), "utf8");
+      const existing = await readFile(outPath, "utf8");
       if (existing === svg) write = false;
     } catch {}
-    if (write) await writeFile(join(ROOT, `${theme}_mode.svg`), svg, "utf8");
+    if (write) await writeFile(outPath, svg, "utf8");
   }
   console.log("build completado");
 }

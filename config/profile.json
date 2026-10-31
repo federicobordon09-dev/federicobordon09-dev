@@ -5,12 +5,12 @@
   "location": "Mendoza, Argentina",
   "ide": "Cursor",
   "languages": {
-    "programming": "TypeScript, JavaScript",
+    "programming": "TypeScript, JavaScript, HTML, CSS",
     "real": "Español, Inglés (intermedio)"
   },
-  "stack": "Next.js, React, Node.js",
+  "stack": "Next.js, React, Node.js, Tailwind CSS, PostgreSQL",
   "hobbies": {
-    "software": "Desarrollo web",
+    "software": "Desarrollo web, open source",
     "gaming": "League of Legends"
   },
   "contact": {
