@@ -3,10 +3,10 @@
   "displayName": "Federico Bordón",
   "birthDate": "2002-04-05",
   "location": "Mendoza, Argentina",
-  "ide": "COMPLETAR",
+  "ide": "Cursor",
   "languages": {
     "programming": "TypeScript, JavaScript",
-    "real": "Español, Inglés (COMPLETAR nivel)"
+    "real": "Español, Inglés (intermedio)"
   },
   "stack": "Next.js, React, Node.js",
   "hobbies": {
@@ -15,7 +15,7 @@
   },
   "contact": {
     "portfolio": "federicobordon.com.ar",
-    "linkedin": "COMPLETAR (ej: in/usuario)",
+    "linkedin": "https://www.linkedin.com/in/federicobordon/",
     "npm": "federicobordondev"
   },
   "theme": {

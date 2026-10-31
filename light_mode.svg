@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1318" height="524" viewBox="0 0 1318 524" role="img" aria-label="Ficha de perfil de Federico Bordón">
-  <rect width="1318" height="524" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1470" height="524" viewBox="0 0 1470 524" role="img" aria-label="Ficha de perfil de Federico Bordón">
+  <rect width="1470" height="524" fill="#ffffff"/>
   <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14" fill="#24292f">
   <text x="32" y="46" fill="#57606a" xml:space="preserve">@@%@@%@@@@@@@@%%@%@@@@@%@%@@%@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@%@@%@@@@@@@@%@@@@@@@@</text>
   <text x="32" y="66" fill="#57606a" xml:space="preserve">%@@@@@@@@@@@@@@@@@@@@%@@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@%@@@@@@@@@@@@@@%</text>
@@ -28,19 +28,22 @@
   <text x="730" y="66" fill="#afb8c1" xml:space="preserve">........................................</text>
   <text x="730" y="86" xml:space="preserve"><tspan fill="#bc4c00">Uptime</tspan><tspan fill="#afb8c1">..................................</tspan><tspan fill="#0550ae"> 24 años, 6 meses, 26 días</tspan></text>
   <text x="730" y="106" xml:space="preserve"><tspan fill="#bc4c00">Location</tspan><tspan fill="#afb8c1">................................</tspan><tspan fill="#0550ae"> Mendoza, Argentina</tspan></text>
-  <text x="730" y="126" xml:space="preserve"><tspan fill="#bc4c00">Programming</tspan><tspan fill="#afb8c1">.............................</tspan><tspan fill="#0550ae"> TypeScript, JavaScript</tspan></text>
-  <text x="730" y="146" xml:space="preserve"><tspan fill="#bc4c00">Stack</tspan><tspan fill="#afb8c1">...................................</tspan><tspan fill="#0550ae"> Next.js, React, Node.js</tspan></text>
-  <text x="730" y="166" xml:space="preserve"><tspan fill="#bc4c00">Software</tspan><tspan fill="#afb8c1">................................</tspan><tspan fill="#0550ae"> Desarrollo web</tspan></text>
-  <text x="730" y="186" xml:space="preserve"><tspan fill="#bc4c00">Gaming</tspan><tspan fill="#afb8c1">..................................</tspan><tspan fill="#0550ae"> League of Legends</tspan></text>
-  <text x="730" y="206" fill="#bc4c00" font-weight="700" xml:space="preserve">Contact</text>
-  <text x="730" y="226" fill="#afb8c1" xml:space="preserve">..................................................................</text>
-  <text x="730" y="246" xml:space="preserve"><tspan fill="#bc4c00">Portfolio</tspan><tspan fill="#afb8c1">...............................</tspan><tspan fill="#0550ae"> federicobordon.com.ar</tspan></text>
-  <text x="730" y="266" xml:space="preserve"><tspan fill="#bc4c00">npm</tspan><tspan fill="#afb8c1">.....................................</tspan><tspan fill="#0550ae"> federicobordondev</tspan></text>
-  <text x="730" y="286" fill="#bc4c00" font-weight="700" xml:space="preserve">GitHub Stats</text>
-  <text x="730" y="306" fill="#afb8c1" xml:space="preserve">..................................................................</text>
-  <text x="730" y="326" xml:space="preserve"><tspan fill="#bc4c00">Repos</tspan><tspan fill="#afb8c1">...................................</tspan><tspan fill="#0550ae"> 12</tspan></text>
-  <text x="730" y="346" xml:space="preserve"><tspan fill="#bc4c00">Stars</tspan><tspan fill="#afb8c1">...................................</tspan><tspan fill="#0550ae"> 34</tspan></text>
-  <text x="730" y="366" xml:space="preserve"><tspan fill="#bc4c00">Commits</tspan><tspan fill="#afb8c1">.................................</tspan><tspan fill="#0550ae"> 1240</tspan></text>
-  <text x="730" y="386" xml:space="preserve"><tspan fill="#bc4c00">Followers</tspan><tspan fill="#afb8c1">...............................</tspan><tspan fill="#0550ae"> 7</tspan></text>
+  <text x="730" y="126" xml:space="preserve"><tspan fill="#bc4c00">IDE</tspan><tspan fill="#afb8c1">.....................................</tspan><tspan fill="#0550ae"> Cursor</tspan></text>
+  <text x="730" y="146" xml:space="preserve"><tspan fill="#bc4c00">Programming</tspan><tspan fill="#afb8c1">.............................</tspan><tspan fill="#0550ae"> TypeScript, JavaScript</tspan></text>
+  <text x="730" y="166" xml:space="preserve"><tspan fill="#bc4c00">Real</tspan><tspan fill="#afb8c1">....................................</tspan><tspan fill="#0550ae"> Español, Inglés (intermedio)</tspan></text>
+  <text x="730" y="186" xml:space="preserve"><tspan fill="#bc4c00">Stack</tspan><tspan fill="#afb8c1">...................................</tspan><tspan fill="#0550ae"> Next.js, React, Node.js</tspan></text>
+  <text x="730" y="206" xml:space="preserve"><tspan fill="#bc4c00">Software</tspan><tspan fill="#afb8c1">................................</tspan><tspan fill="#0550ae"> Desarrollo web</tspan></text>
+  <text x="730" y="226" xml:space="preserve"><tspan fill="#bc4c00">Gaming</tspan><tspan fill="#afb8c1">..................................</tspan><tspan fill="#0550ae"> League of Legends</tspan></text>
+  <text x="730" y="246" fill="#bc4c00" font-weight="700" xml:space="preserve">Contact</text>
+  <text x="730" y="266" fill="#afb8c1" xml:space="preserve">....................................................................................</text>
+  <text x="730" y="286" xml:space="preserve"><tspan fill="#bc4c00">Portfolio</tspan><tspan fill="#afb8c1">...............................</tspan><tspan fill="#0550ae"> federicobordon.com.ar</tspan></text>
+  <text x="730" y="306" xml:space="preserve"><tspan fill="#bc4c00">LinkedIn</tspan><tspan fill="#afb8c1">................................</tspan><tspan fill="#0550ae"> https://www.linkedin.com/in/federicobordon/</tspan></text>
+  <text x="730" y="326" xml:space="preserve"><tspan fill="#bc4c00">npm</tspan><tspan fill="#afb8c1">.....................................</tspan><tspan fill="#0550ae"> federicobordondev</tspan></text>
+  <text x="730" y="346" fill="#bc4c00" font-weight="700" xml:space="preserve">GitHub Stats</text>
+  <text x="730" y="366" fill="#afb8c1" xml:space="preserve">....................................................................................</text>
+  <text x="730" y="386" xml:space="preserve"><tspan fill="#bc4c00">Repos</tspan><tspan fill="#afb8c1">...................................</tspan><tspan fill="#0550ae"> 12</tspan></text>
+  <text x="730" y="406" xml:space="preserve"><tspan fill="#bc4c00">Stars</tspan><tspan fill="#afb8c1">...................................</tspan><tspan fill="#0550ae"> 34</tspan></text>
+  <text x="730" y="426" xml:space="preserve"><tspan fill="#bc4c00">Commits</tspan><tspan fill="#afb8c1">.................................</tspan><tspan fill="#0550ae"> 1240</tspan></text>
+  <text x="730" y="446" xml:space="preserve"><tspan fill="#bc4c00">Followers</tspan><tspan fill="#afb8c1">...............................</tspan><tspan fill="#0550ae"> 7</tspan></text>
   </g>
 </svg>

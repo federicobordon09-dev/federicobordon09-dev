@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="https://federicobordon.com.ar">Portfolio</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/federicobordon/">LinkedIn</a> &nbsp;·&nbsp;
   <a href="https://www.npmjs.com/~federicobordondev">npm</a> &nbsp;·&nbsp;
   <a href="https://github.com/federicobordon09-dev?tab=repositories">Repositorios</a>
 </p>
