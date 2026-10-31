@@ -9,5 +9,8 @@
     "build": "node scripts/build.mjs",
     "build:offline": "node scripts/build.mjs --offline",
     "ascii": "node scripts/ascii-from-image.mjs"
+  },
+  "devDependencies": {
+    "pngjs": "^7.0.0"
   }
 }
