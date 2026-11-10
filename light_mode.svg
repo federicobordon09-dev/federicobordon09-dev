@@ -26,7 +26,7 @@
   <text x="20" y="447" fill="#57606a" font-size="9.799999999999999" xml:space="preserve">                                #                                                    </text>
   <text x="552" y="34" fill="#bc4c00" font-size="17" font-weight="700" xml:space="preserve">Federico Bordón</text>
   <text x="552" y="54" fill="#afb8c1" xml:space="preserve">..................................................</text>
-  <text x="552" y="74" xml:space="preserve"><tspan fill="#bc4c00">Uptime</tspan><tspan fill="#afb8c1">..........</tspan><tspan fill="#0550ae"> 24 años, 7 meses, 4 días</tspan></text>
+  <text x="552" y="74" xml:space="preserve"><tspan fill="#bc4c00">Uptime</tspan><tspan fill="#afb8c1">..........</tspan><tspan fill="#0550ae"> 24 años, 7 meses, 5 días</tspan></text>
   <text x="552" y="94" xml:space="preserve"><tspan fill="#bc4c00">Location</tspan><tspan fill="#afb8c1">........</tspan><tspan fill="#0550ae"> Mendoza, Argentina</tspan></text>
   <text x="552" y="114" xml:space="preserve"><tspan fill="#bc4c00">IDE</tspan><tspan fill="#afb8c1">.............</tspan><tspan fill="#0550ae"> Cursor</tspan></text>
   <text x="552" y="154" xml:space="preserve"><tspan fill="#bc4c00">Programming</tspan><tspan fill="#afb8c1">.....</tspan><tspan fill="#0550ae"> TypeScript, JavaScript, HTML, CSS</tspan></text>
@@ -45,6 +45,6 @@
   <text x="552" y="494" xml:space="preserve"><tspan fill="#bc4c00">Repos</tspan><tspan fill="#afb8c1">...........</tspan><tspan fill="#0550ae"> 8</tspan></text>
   <text x="552" y="514" xml:space="preserve"><tspan fill="#bc4c00">Stars</tspan><tspan fill="#afb8c1">...........</tspan><tspan fill="#0550ae"> 1</tspan></text>
   <text x="552" y="534" xml:space="preserve"><tspan fill="#bc4c00">Commits</tspan><tspan fill="#afb8c1">.........</tspan><tspan fill="#0550ae"> 246</tspan></text>
-  <text x="552" y="554" xml:space="preserve"><tspan fill="#bc4c00">Followers</tspan><tspan fill="#afb8c1">.......</tspan><tspan fill="#0550ae"> 69</tspan></text>
+  <text x="552" y="554" xml:space="preserve"><tspan fill="#bc4c00">Followers</tspan><tspan fill="#afb8c1">.......</tspan><tspan fill="#0550ae"> 70</tspan></text>
   </g>
 </svg>
